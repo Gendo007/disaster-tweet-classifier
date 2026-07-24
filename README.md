@@ -113,6 +113,17 @@ When executing batch inference on unseen CSV inputs (`02_batch_inference.py`), t
 * **Transformer Architecture:** Upgrade the core embedding engine from TF-IDF to transformer-based models (BERT / RoBERTa) using Hugging Face.
 
 ---
+## 📁 Data Directory Structure & Usage
+
+All datasets are stored in the `/data` directory:
+
+| File Name | Purpose | Used In Script |
+| :--- | :--- | :--- |
+| `1_Trained_model_Data.csv` | Historical labeled tweets for model training | `01_model_training.py` |
+| `2_Test_Data.csv` | Unseen batch data for pipeline evaluation | `02_batch_inference.py` |
+| `3_output_result_sample.csv` | Sample inference output generated with risk flags | N/A (Generated Output) |
+
+---
 
 ## 👨‍💻 Author
 
